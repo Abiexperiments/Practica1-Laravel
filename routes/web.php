@@ -7,7 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/bienvenida', [PaginaController::class, 'index']);
+Route::get('/Bienvenida', [PaginaController::class, 'bienvenida']);
 
 
 Route::get('/saludo/{nombre}', [PaginaController::class, 'saludo']);
