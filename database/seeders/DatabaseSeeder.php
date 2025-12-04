@@ -17,10 +17,12 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(ProductoSeeder::class);
         // User::factory(10)->create();
-
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        
+$this->call([
+            \Database\Seeders\SpecialtySeeder::class,
+            \Database\Seeders\DoctorSeeder::class,
+            \Database\Seeders\PatientSeeder::class,
+            \Database\Seeders\AppointmentSeeder::class,
         ]);
     }
 }
